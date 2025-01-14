@@ -1,0 +1,302 @@
+[
+    {
+        "timestamp": "2024-10-29T13:47:30.254584",
+        "messages": [
+            {
+                "timestamp": "2024-10-29T13:47:48.569609",
+                "user_message": "\uc548\ub155",
+                "bot_response": "Pardon, I didn't quite get that, could you try again in English?"
+            },
+            {
+                "timestamp": "2024-10-29T13:48:00.005159",
+                "user_message": "Hey",
+                "bot_response": "Hello! How are you today? Have you been keeping busy with anything interesting?"
+            },
+            {
+                "timestamp": "2024-10-29T13:49:46.152888",
+                "user_message": "Um, yeah, actually, as a matter of fact, I have my family coming over today, my mom, my dad, my brother, my older brother, and my younger brother, and my sister, so I'm just busy making food for all of them. It's so fun!",
+                "bot_response": "Wow, that sounds wonderful! It's great that you\u2019re having a family gathering. What kind of food are you preparing? Have you all planned any special activities for when they arrive?"
+            },
+            {
+                "timestamp": "2024-10-29T13:50:30.236984",
+                "user_message": "oh no no no so nothing very fancy but we're gonna sit together chat over dinner and watch a good movie we're thinking we'll watch Yeh Jawani Hai Diwani",
+                "bot_response": "That sounds like a lovely evening! Yeh Jawani Hai Diwani is a great choice for a movie night. It's always nice to relax and enjoy some good food and company. Do you have a favorite dish you\u2019re making for dinner? And how are you feeling today, are you in a good mood?"
+            },
+            {
+                "timestamp": "2024-10-29T13:50:50.401528",
+                "user_message": "Yeah, I'm in a great mood today However, I do not have a lot of time to chat with us I just wanted to drop by and have a quick check-in. So I'm gonna go now",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-10-29T13:51:08.239758",
+        "messages": [
+            {
+                "timestamp": "2024-10-29T13:51:15.128634",
+                "user_message": "Bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-10-29T13:51:41.520544",
+        "messages": [
+            {
+                "timestamp": "2024-10-29T13:51:50.750018",
+                "user_message": "Hello",
+                "bot_response": "Hello! How are you today? Did your family gathering go well?"
+            },
+            {
+                "timestamp": "2024-10-29T13:52:55.558477",
+                "user_message": "Oh so my family hasn't really arrived yet, I've just come here for a quick advice. What do you think would they like more? I know you don't know their preference but I want you to choose one of the two dishes I'm thinking. One is grilled chicken and naan and the other is makhani paneer with rice. What do you think they would like more?",
+                "bot_response": "Both options sound delicious! Grilled chicken and naan is a classic favorite, especially if they enjoy something savory and hearty. On the other hand, makhani paneer with rice is creamy and flavorful, which can be a big hit as well. If I had to choose, I might lean towards the makhani paneer; it's comforting and tends to please a variety of palates. Trust your instincts though! What do you feel like making?"
+            },
+            {
+                "timestamp": "2024-10-29T13:53:41.249131",
+                "user_message": "No, no, that sounds great. I was confused between the two. I enjoy cooking them both So I'm gonna go with your advice. I'm gonna make makhani paneer and rice. Thank you for that",
+                "bot_response": "That sounds like a fantastic choice! Makhani paneer is always a comforting and delicious option. I\u2019m sure your family will love it! Cooking can be such a joyful experience, especially when it\u2019s for loved ones. \n\nBy the way, have you had a chance to take care of your medications today? It\u2019s important to keep up with them while you\u2019re busy planning the gathering."
+            },
+            {
+                "timestamp": "2024-10-29T13:54:14.375987",
+                "user_message": "Oh, yes, thank you for reminding. I'm reminding me. I'm actually gonna go and take my sugar medicine right now",
+                "bot_response": "You're very welcome! I'm glad you remembered to take your medicine. It's always good to stay on top of it, especially with all the activity you have planned with your family. Have you had a chance to drink enough water today? Staying hydrated is important too!"
+            },
+            {
+                "timestamp": "2024-10-29T13:54:53.907977",
+                "user_message": "mm-hmm I have been drinking some good amount of water and I just drank another glass while taking my medicine so thank you for that and I'm gonna go going now I have to cook some really delicious meal for my family they're gonna be arriving really soon",
+                "bot_response": "That\u2019s great to hear you\u2019re staying hydrated! I\u2019m sure your family will enjoy the delicious meal you\u2019re preparing. Have fun cooking and enjoy your time with them! If you need anything later, feel free to drop by. Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-10-29T16:16:23.964215",
+        "messages": [
+            {
+                "timestamp": "2024-10-29T16:16:32.750154",
+                "user_message": "you",
+                "bot_response": "Pardon, I didn't quite get that, could you try again in English?"
+            },
+            {
+                "timestamp": "2024-10-29T16:16:41.677237",
+                "user_message": "you",
+                "bot_response": "Pardon, I didn't quite get that, could you try again in English?"
+            },
+            {
+                "timestamp": "2024-10-29T16:16:58.279273",
+                "user_message": "",
+                "bot_response": "Hello! How are you today? Did you enjoy your time with your family over the weekend?"
+            },
+            {
+                "timestamp": "2024-10-29T16:17:18.844437",
+                "user_message": "",
+                "bot_response": "Hello! How are you today? Did you enjoy your time with your family over the weekend?"
+            },
+            {
+                "timestamp": "2024-10-29T16:17:36.910948",
+                "user_message": "Yes, I did.",
+                "bot_response": "That's great to hear! Spending time with family can be really uplifting. What did you all do together?"
+            },
+            {
+                "timestamp": "2024-10-29T16:17:45.470082",
+                "user_message": "Bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-10-29T19:08:15.714623",
+        "messages": [
+            {
+                "timestamp": "2024-10-29T19:08:25.334088",
+                "user_message": "hello",
+                "bot_response": "Hello! How are you today? Did you have a good night\u2019s sleep?"
+            },
+            {
+                "timestamp": "2024-10-29T19:08:53.714836",
+                "user_message": "What is today's date?",
+                "bot_response": "Today's date is October 29, 2024. How are you doing today?"
+            },
+            {
+                "timestamp": "2024-10-29T19:09:12.143559",
+                "user_message": "Do you know what the time is right now?",
+                "bot_response": "I'm afraid I can't check the current time for you. However, you can easily find it on your device or a nearby clock. How are you doing today?"
+            },
+            {
+                "timestamp": "2024-10-29T19:10:43.394977",
+                "user_message": "Can you tell me a short story in 100 words?",
+                "bot_response": "Once in a quaint village, an old baker named Mr. Thompson created the most delicious bread. Every morning, the delightful aroma filled the streets, drawing villagers near. One day, a little girl named Lily approached him, asking for a loaf to share with her sick mother. Touched by her kindness, Mr. Thompson gifted her two loaves. Inspired, the villagers began sharing their own treats, fostering a spirit of giving. Soon, the village transformed into a community where everyone cared for one another. Years later, the scent of fresh bread still lingered, a reminder of the bonds formed through simple acts of kindness."
+            },
+            {
+                "timestamp": "2024-10-29T19:10:59.380308",
+                "user_message": "Bye-bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-11-14T09:35:16.679415",
+        "messages": [
+            {
+                "timestamp": "2024-11-14T09:36:27.334510",
+                "user_message": "Hi, I have a few questions that I wanted to ask, do you have any tips for a healthy diet for me? I want to try and eat healthy from now on.",
+                "bot_response": "It's great to hear that you're interested in eating healthier! Here are a few tips to get you started: \n\n1. **Plan Your Meals**: Planning ahead can help ensure that you eat a variety of nutritious foods.\n2. **Focus on Whole Foods**: Try to incorporate more fruits, vegetables, whole grains, and lean proteins into your diet.\n3. **Stay Hydrated**: Drink plenty of water throughout the day.\n4. **Mind Portion Sizes**: Be mindful of portion sizes to help maintain a balanced diet.\n5. **Look for Budget-Friendly Options**: Consider shopping from a list to stay within your budget while making healthy choices.\n\nHow does that sound? Do you have any specific foods you enjoy or dietary preferences?"
+            },
+            {
+                "timestamp": "2024-11-14T09:36:43.143393",
+                "user_message": "Bye-bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-11-14T09:43:01.625808",
+        "messages": [
+            {
+                "timestamp": "2024-11-14T09:44:17.290996",
+                "user_message": "hi I wanted some tips on to how do I have a healthier meal plan",
+                "bot_response": "It's great that you're looking to improve your meal planning! Here are some tips to help you create a healthier meal plan:\n\n1. **Plan Ahead**: Take some time to plan your meals for the week, which will help you incorporate a variety of nutritious foods.\n\n2. **Focus on Whole Foods**: Include plenty of fruits, vegetables, whole grains, and lean proteins in your meals.\n\n3. **Stay Hydrated**: Don\u2019t forget to drink enough water throughout the day.\n\n4. **Mind Portions**: Being aware of portion sizes can help you maintain a balanced diet.\n\n5. **Budget-Friendly Options**: Create a shopping list to help stick to a budget while making healthy choices.\n\nIf you have any specific foods you enjoy or dietary restrictions, I can give more tailored advice!"
+            },
+            {
+                "timestamp": "2024-11-14T09:45:32.148985",
+                "user_message": "Do you know the source of your answer?",
+                "bot_response": "Yes, I do! For any health-related information, I aim to provide reliable sources. If you have a specific question or topic in mind, I can let you know the source of my answer. Please feel free to ask!"
+            },
+            {
+                "timestamp": "2024-11-14T09:45:59.990520",
+                "user_message": "What is the source of your previous answer?",
+                "bot_response": "The source of my previous health-related answers is the National Institute on Aging, as referenced in the document \"How To Find Reliable Health Information Online.\" If you have specific questions about healthy meal planning or any other topic, feel free to ask!"
+            },
+            {
+                "timestamp": "2024-11-14T09:48:59.660803",
+                "user_message": "okay can you tell me any tips for maintaining my blood pressure",
+                "bot_response": "Absolutely! According to the CDC, here are some lifestyle changes to help maintain healthy blood pressure:\n\n1. Get regular physical activity to strengthen your heart and blood vessels.\n2. Avoid smoking, as it increases your risk for high blood pressure and heart disease.\n3. Eat plenty of fresh fruits and vegetables along with healthy meals and snacks.\n4. Maintain a healthy weight to reduce stress on your heart. \n\nIf you have any specific questions or topics in mind, feel free to ask!"
+            },
+            {
+                "timestamp": "2024-11-14T09:50:07.450585",
+                "user_message": "Bye",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-12-05T21:00:27.475087",
+        "messages": [
+            {
+                "timestamp": "2024-12-05T21:00:44.514404",
+                "user_message": "Hello?",
+                "bot_response": "Hello! How are you doing today? Is there anything specific you\u2019d like to talk about or ask?"
+            },
+            {
+                "timestamp": "2024-12-05T21:01:11.401121",
+                "user_message": "I got a 100 in my quiz and I'm so happy about that.",
+                "bot_response": "That's fantastic news! Getting a perfect score is quite an achievement. You should be very proud of your hard work paying off. How do you plan to celebrate this wonderful achievement?"
+            },
+            {
+                "timestamp": "2024-12-05T21:02:27.061570",
+                "user_message": "So happy, I wanna have an ice cream and go tell my parents.",
+                "bot_response": "That's wonderful to hear! Enjoying an ice cream sounds like a perfect way to celebrate. Sharing your happiness with your parents will surely make the moment even more special. What flavor of ice cream are you planning to get?"
+            },
+            {
+                "timestamp": "2024-12-05T21:02:48.818977",
+                "user_message": "Alright then, I'll just go and have the ice cream then. Bye! See ya!",
+                "bot_response": "Alright then, enjoy your ice cream and congratulations again on your quiz score! If you need anything later, feel free to come back. Have a great day!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-12-05T21:09:09.263598",
+        "messages": [
+            {
+                "timestamp": "2024-12-05T21:09:39.718289",
+                "user_message": "Hello, do you remember where we left off?",
+                "bot_response": "Hello! Yes, last time we chatted, you mentioned that you were celebrating getting a perfect score on a quiz by having ice cream and planning to share the good news with your parents. It's great to catch up again. How have things been going since then? Anything new you'd like to share or talk about today?"
+            },
+            {
+                "timestamp": "2024-12-05T21:10:21.017899",
+                "user_message": "It's been going great. I'm just preparing for my exams. The quiz I told you about last time. I have a score of 85 which is just behind the score A. And I need to get above 90 to get an A in the course. I really hope I get an A.",
+                "bot_response": "That's really wonderful progress! It sounds like you're getting very close to your goal. What subjects are you focusing on for your exams? And do you have any strategies in place for studying or areas you're concentrating on to secure the A you're aiming for?"
+            },
+            {
+                "timestamp": "2024-12-05T21:10:45.752158",
+                "user_message": "Very knuckle-cheeked bunthead. That's okay.",
+                "bot_response": "It seems like you might be using a playful or unique expression. Is there something specific you wanted to discuss or ask about today?"
+            },
+            {
+                "timestamp": "2024-12-05T21:11:20.338443",
+                "user_message": "i'm just a little fidgety let's see hope my exam goes well",
+                "bot_response": "It sounds like you're feeling a bit anxious about your exam. That's perfectly normal, especially when you've put in so much effort preparing for it. Do you have any last-minute revisions or topics you're focusing on? Taking a moment to relax and breathe deeply can also help ease some of that nervousness."
+            },
+            {
+                "timestamp": "2024-12-05T21:11:41.666733",
+                "user_message": "i think i'm gonna go and revise see you bye",
+                "bot_response": "Alright then, have a great revision session! If you have any questions or need assistance later, feel free to come back. Bye for now, and good luck with your studies!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-12-05T21:12:51.666123",
+        "messages": [
+            {
+                "timestamp": "2024-12-05T21:13:07.857934",
+                "user_message": "Hello, I am confused and sad and in need your help.",
+                "bot_response": "Hello, I'm here for you. What's been going on? Would you like to talk about what's making you feel confused and sad?"
+            },
+            {
+                "timestamp": "2024-12-05T21:14:03.246599",
+                "user_message": "I'm so sad. I don't know what to do. I feel like I'm just gonna be depressed",
+                "bot_response": "I'm sorry to hear that you're feeling this way. It's important to remember that you're not alone and there are ways to help manage these feelings. Sometimes, talking about what\u2019s on your mind can make a big difference. Would you like to share more about what's been making you feel sad? \n\nAnd remember, if these feelings become overwhelming, it\u2019s really important to reach out to a professional who can provide the support you need. There are also resources and treatments that can help. If you're comfortable, I can provide some general tips for coping during tough times, but please consider talking to someone who can offer personal guidance."
+            },
+            {
+                "timestamp": "2024-12-05T21:14:13.635962",
+                "user_message": "No, no, I'm going, I'm going, bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-01-04T13:53:28.356244",
+        "messages": [
+            {
+                "timestamp": "2025-01-04T13:53:42.788373",
+                "user_message": "\u0939\u0932\u094b",
+                "bot_response": "Pardon, I didn't quite get that, could you try again in English?"
+            },
+            {
+                "timestamp": "2025-01-04T13:53:57.782601",
+                "user_message": "\u0939\u0947\u0932\u094b",
+                "bot_response": "Pardon, I didn't quite get that, could you try again in English?"
+            },
+            {
+                "timestamp": "2025-01-04T13:58:30.872429",
+                "user_message": "Hello.",
+                "bot_response": "Hello! How's your day going so far? Is there anything special on your mind today?"
+            },
+            {
+                "timestamp": "2025-01-04T13:58:54.784543",
+                "user_message": "Nothing much I'm planning on eating Thai food.",
+                "bot_response": "Thai food sounds delicious! Are you thinking of any dish in particular for your meal? Also, have you taken all your medications as prescribed today? It's important to stay on track with them."
+            },
+            {
+                "timestamp": "2025-01-04T13:59:55.784342",
+                "user_message": "I'm confused between Pad Thai and Pad Kimo.",
+                "bot_response": "Both Pad Thai and Pad Kee Mao (often referred to as Pad Kimo) are delicious Thai dishes with distinct flavors. Pad Thai is a stir-fried noodle dish commonly made with tamarind, fish sauce, eggs, and a choice of protein like shrimp or chicken, garnished with peanuts and lime. It has a balance of sweet, sour, and savory flavors. On the other hand, Pad Kee Mao, also known as \"Drunken Noodles,\" is a spicier dish made with rice noodles, basil, vegetables, soy sauce, and a mix of seafood or meat. It's known for its bold, spicy flavor. If you're in the mood for something classic and slightly sweet, go for Pad Thai. If you prefer something with a spicy kick, Pad Kee Mao would be the choice!"
+            },
+            {
+                "timestamp": "2025-01-04T14:00:31.051681",
+                "user_message": "Thank you. I love my food.",
+                "bot_response": "That's wonderful to hear! Enjoying your food is one of life's simple pleasures. Do you have a favorite cuisine or dish that you particularly love?"
+            },
+            {
+                "timestamp": "2025-01-04T14:00:49.843291",
+                "user_message": "Can you set that reminder for me to go and work at 6pm?",
+                "bot_response": "I've set a reminder for going to work at 6:00 pm, daily."
+            },
+            {
+                "timestamp": "2025-01-04T14:01:12.472099",
+                "user_message": "All right then, thank you, bye.",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    }
+]

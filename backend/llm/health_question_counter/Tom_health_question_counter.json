@@ -1,0 +1,72 @@
+{
+    "0": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "1": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "2": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "3": {
+        "counter": true,
+        "freq": 7,
+        "asked_date": "2024-11-11 20:13:52",
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 2
+    },
+    "4": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "5": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "6": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "7": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "8": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    },
+    "9": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2024-11-13 10:53:37",
+        "diff": 0
+    }
+}

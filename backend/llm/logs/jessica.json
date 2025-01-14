@@ -1,0 +1,22 @@
+[
+    {
+        "timestamp": "2025-01-04T14:17:26.879169",
+        "messages": [
+            {
+                "timestamp": "2025-01-04T14:17:49.093791",
+                "user_message": "Hello.",
+                "bot_response": "Hello! How are you today? Is there anything specific you'd like to talk about or any question you have in mind?"
+            },
+            {
+                "timestamp": "2025-01-04T14:18:18.769374",
+                "user_message": "Just feeling a little low.",
+                "bot_response": "I'm sorry to hear you're feeling a bit down. Sometimes talking about what's on your mind can help. Is there anything particular that's making you feel this way, or do you just feel low in general today?"
+            },
+            {
+                "timestamp": "2025-01-04T14:18:37.010130",
+                "user_message": "Bye",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    }
+]

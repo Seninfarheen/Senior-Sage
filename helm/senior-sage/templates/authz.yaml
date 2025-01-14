@@ -1,0 +1,90 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.authz.name }}-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.authz.name }}
+spec:
+  replicas: {{ .Values.authz.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.authz.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.authz.name }}
+    spec:
+      containers:
+      - name: {{ .Values.authz.name }}
+        image: {{ .Values.dockerUsername }}/{{ .Values.authz.image }}
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /ping
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/config/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ .Values.authz.configMapName }}
+          items:
+          - key: conf.yaml
+            path: conf.yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.authz.configMapName }}
+  namespace: {{ .Values.namespace }}
+data:
+  conf.yaml: |-
+    authSecretKey: {{ .Values.authz.config.secretKey }}
+    encryptionKey: {{ .Values.authz.config.encryptionKey }}
+    llmUsername: {{ .Values.llmUsername }}
+    db:
+      host: {{ .Values.db.host }}
+      port: {{ .Values.db.port }}
+      database: {{ .Values.db.database }}
+      user: {{ .Values.db.user }}
+      password: {{ .Values.db.password }}
+      appname: {{ .Values.db.appname }}
+      usersCollection: {{ .Values.db.usersCollection }}
+      aclsCollection: {{ .Values.db.aclsCollection }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.authz.serviceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.authz.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.authz.servicePort }}
+      targetPort: {{ .Values.authz.targetPort }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.authz.nodePortServiceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  type: NodePort
+  selector:
+    app: {{ .Values.authz.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.authz.servicePort }}
+      # port: 80
+      # targetPort: {{ .Values.authz.targetPort }}
+      nodePort: {{ .Values.authz.nodePort }}

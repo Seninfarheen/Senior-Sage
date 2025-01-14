@@ -1,0 +1,72 @@
+{
+    "0": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580079",
+        "diff": 0
+    },
+    "1": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580092",
+        "diff": 0
+    },
+    "2": {
+        "counter": true,
+        "freq": 1,
+        "asked_date": "2025-01-04 14:58:36",
+        "curr_date": "2025-01-04T14:54:33.580095",
+        "diff": 0
+    },
+    "3": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580098",
+        "diff": 0
+    },
+    "4": {
+        "counter": true,
+        "freq": 1,
+        "asked_date": "2025-01-04 14:55:29",
+        "curr_date": "2025-01-04T14:54:33.580100",
+        "diff": 0
+    },
+    "5": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580102",
+        "diff": 0
+    },
+    "6": {
+        "counter": true,
+        "freq": 1,
+        "asked_date": "2025-01-04 14:59:10",
+        "curr_date": "2025-01-04T14:54:33.580104",
+        "diff": 0
+    },
+    "7": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580106",
+        "diff": 0
+    },
+    "8": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580108",
+        "diff": 0
+    },
+    "9": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:54:33.580110",
+        "diff": 0
+    }
+}

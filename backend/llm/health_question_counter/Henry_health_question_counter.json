@@ -1,0 +1,72 @@
+{
+    "0": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825838",
+        "diff": 0
+    },
+    "1": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825852",
+        "diff": 0
+    },
+    "2": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825856",
+        "diff": 0
+    },
+    "3": {
+        "counter": true,
+        "freq": 7,
+        "asked_date": "2024-12-06 21:13:11",
+        "curr_date": "2024-12-06T21:08:14.825859",
+        "diff": 0
+    },
+    "4": {
+        "counter": true,
+        "freq": 1,
+        "asked_date": "2024-12-06 21:12:44",
+        "curr_date": "2024-12-06T21:08:14.825861",
+        "diff": 0
+    },
+    "5": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825863",
+        "diff": 0
+    },
+    "6": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825865",
+        "diff": 0
+    },
+    "7": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825867",
+        "diff": 0
+    },
+    "8": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825870",
+        "diff": 0
+    },
+    "9": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2024-12-06T21:08:14.825872",
+        "diff": 0
+    }
+}

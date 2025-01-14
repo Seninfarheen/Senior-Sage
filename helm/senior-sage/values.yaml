@@ -1,0 +1,61 @@
+namespace: senior-sage
+dockerUsername: "sarodesparsh"
+serverService:
+  name: server-service
+  image: server
+  replicas: 1
+  configMapName: server-service-config
+  serviceName: server-service-svc
+  nodePortServiceName: server-service-nodeport-svc
+  servicePort: 8080
+  targetPort: 8080
+  nodePort: 30003
+authz:
+  name: authz
+  image: authz
+  replicas: 1
+  configMapName: authz-config
+  serviceName: authz-svc
+  nodePortServiceName: authz-nodeport-svc
+  servicePort: 8080
+  targetPort: 8080
+  nodePort: 30001
+  config:
+    secretKey: "testSecretKey!"
+    encryptionKey: "test_keytest_key"
+storageService:
+  name: storage-service
+  image: storage-service
+  replicas: 1
+  configMapName: storage-service-config
+  serviceName: storage-service-svc
+  nodePortServiceName: storage-service-nodeport-svc
+  servicePort: 8080
+  targetPort: 8080
+  nodePort: 30002
+  config:
+    secretKey: "testSecretKey!"
+    encryptionKey: "test_keytest_key"
+languageProcessor:
+  openaiApiKey: "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"
+  name: language-processor
+  image: language-processor
+  replicas: 1
+  configMapName: language-processor-config
+  serviceName: language-processor-svc
+  nodePortServiceName: language-processor-nodeport-svc
+  servicePort: 5000
+  targetPort: 5000
+  nodePort: 30000
+llmUsername: "llmuser"
+llmPassword: "llmpassword"
+host: "senior-sage.com"
+db:
+  host: mymongocluster.r1pcx2q.mongodb.net
+  user: sage
+  password: oQZxNrwTuKBsmAgu
+  database: sage
+  appname: users
+  usersCollection: users
+  aclsCollection: acls
+  port: 8080

@@ -1,0 +1,12 @@
+{
+  "user": "oliver",
+  "last_updated": "2024-12-06T18:53:27.412718",
+  "preferences": [
+    {
+      "type": "hobby",
+      "detail": "plays golf once a week",
+      "sentiment": "like",
+      "timestamp": "2024-12-06T17:34:07.638694"
+    }
+  ]
+}

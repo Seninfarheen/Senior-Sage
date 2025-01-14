@@ -1,0 +1,47 @@
+[
+    {
+        "reminder_for": "go out for movies",
+        "details": {
+            "time": "6:30 pm",
+            "frequency": "one-time",
+            "start_date": "2024-11-09",
+            "cron_job": "30 18 9 11 *"
+        }
+    },
+    {
+        "reminder_for": "Taking dog out for a walk",
+        "details": {
+            "time": "9:30 pm",
+            "frequency": "one-time",
+            "start_date": "2024-11-10",
+            "cron_job": "30 21 10 11 *"
+        }
+    },
+    {
+        "reminder_for": "stand-up meeting",
+        "details": {
+            "time": "10:00 pm",
+            "frequency": "one-time",
+            "start_date": "2024-11-11",
+            "cron_job": "0 22 11 11 *"
+        }
+    },
+    {
+        "reminder_for": "wake up",
+        "details": {
+            "time": "6:30 am",
+            "frequency": "daily",
+            "start_date": "2024-11-12",
+            "cron_job": "30 6 * * *"
+        }
+    },
+    {
+        "reminder_for": "party tonight",
+        "details": {
+            "time": "9:30 pm",
+            "frequency": "one-time",
+            "start_date": "2024-11-14",
+            "cron_job": "30 21 14 11 *"
+        }
+    }
+]

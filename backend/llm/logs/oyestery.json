@@ -1,0 +1,32 @@
+[
+    {
+        "timestamp": "2024-10-16T16:28:46.086341",
+        "messages": [
+            {
+                "timestamp": "2024-10-16T16:29:07.586627",
+                "user_message": "I've been waiting for a long time. Where have you been?",
+                "bot_response": "I'm sorry if it felt like I was away! I'm right here now. How has your day been so far?"
+            },
+            {
+                "timestamp": "2024-10-16T16:29:24.283327",
+                "user_message": "My day has been great, but I didn't miss you.",
+                "bot_response": "I'm glad to hear your day has been great! That's all that matters. What made your day good?"
+            },
+            {
+                "timestamp": "2024-10-16T16:29:41.940709",
+                "user_message": "Are you really this compassionate or are you just pretending to be one?",
+                "bot_response": "I genuinely care about your well-being! I\u2019m here to listen and help. How has your day been today?"
+            },
+            {
+                "timestamp": "2024-10-16T16:30:07.734377",
+                "user_message": "I have got suicidal thoughts.",
+                "bot_response": "I'm really sorry to hear that you're feeling this way. It's very important to talk to someone who can help you, like a mental health professional. Please consider reaching out to a trusted friend or a healthcare provider. You don\u2019t have to go through this alone."
+            },
+            {
+                "timestamp": "2024-10-16T16:30:28.568830",
+                "user_message": "Alright then, then I'll just head to the hospital.",
+                "bot_response": "I'm sorry to hear that you're feeling this way. It's really important to talk to someone who can help you. Please take care of yourself and seek support."
+            }
+        ]
+    }
+]

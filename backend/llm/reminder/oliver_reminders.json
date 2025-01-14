@@ -1,0 +1,17 @@
+[
+    {
+        "reminder for friend meeting": {
+            "time": "10:00 AM",
+            "date": "2024-11-01"
+        }
+    },
+    {
+        "reminder_for": "play golf",
+        "details": {
+            "time": "6:00 AM",
+            "frequency": "weekly",
+            "start_date": "2024-12-06",
+            "cron_job": "0 6 * * 2"
+        }
+    }
+]

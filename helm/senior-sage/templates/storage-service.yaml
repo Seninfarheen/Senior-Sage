@@ -1,0 +1,93 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.storageService.name }}-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.storageService.name }}
+spec:
+  replicas: {{ .Values.storageService.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.storageService.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.storageService.name }}
+    spec:
+      containers:
+      - name: {{ .Values.storageService.name }}
+        image: {{ .Values.dockerUsername }}/{{ .Values.storageService.image }}
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /ping
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/config/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ .Values.storageService.configMapName }}
+          items:
+          - key: conf.yaml
+            path: conf.yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.storageService.configMapName }}
+  namespace: {{ .Values.namespace }}
+data:
+  conf.yaml: |-
+    encryptionKey: {{ .Values.storageService.config.encryptionKey }}
+    llmUsername: {{ .Values.llmUsername }}
+    authzConfig:
+      host: {{ .Values.authz.serviceName }}.{{ .Values.namespace }}
+      port: {{ .Values.authz.servicePort }}
+    db:
+      host: {{ .Values.db.host }}
+      port: {{ .Values.db.port }}
+      database: {{ .Values.db.database }}
+      user: {{ .Values.db.user }}
+      password: {{ .Values.db.password }}
+      appname: {{ .Values.db.appname }}
+      usersCollection: {{ .Values.db.usersCollection }}
+      aclsCollections: {{ .Values.db.aclsCollections }}
+      accessLogsCollection: {{ .Values.db.accessLogsCollection }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.storageService.serviceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.storageService.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.storageService.servicePort }}
+      targetPort: {{ .Values.storageService.targetPort }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.storageService.nodePortServiceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  type: NodePort
+  selector:
+    app: {{ .Values.storageService.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.storageService.servicePort }}
+      # port: 80
+      targetPort: {{ .Values.storageService.targetPort }}
+      nodePort: {{ .Values.storageService.nodePort }}

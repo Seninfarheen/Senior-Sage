@@ -1,0 +1,26 @@
+{
+    "0": {
+        "question": "Have you had any alcohol or smoked recently?",
+        "freq": 1
+    },
+    "1": {
+        "question": "Have you taken all your medications as prescribed today?",
+        "freq": 1
+    },
+    "3": {
+        "question": "Did you spend time with family or friends today?",
+        "freq": 7
+    },
+    "5": {
+        "question": "How would you rate your overall physical health today?",
+        "freq": 1
+    },
+    "7": {
+        "question": "On a scale of 1-10, how would you rate your mood today?",
+        "freq": 1
+    },
+    "8": {
+        "question": "Do you feel irritable or frustrated more than usual?",
+        "freq": 7
+    }
+}

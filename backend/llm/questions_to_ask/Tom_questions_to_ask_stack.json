@@ -1,0 +1,38 @@
+{
+    "0": {
+        "question": "Have you had any alcohol or smoked recently?",
+        "freq": 1
+    },
+    "1": {
+        "question": "Have you taken all your medications as prescribed today?",
+        "freq": 1
+    },
+    "2": {
+        "question": "Are you experiencing any pain or discomfort today?",
+        "freq": 1
+    },
+    "4": {
+        "question": "Did you sleep well last night?",
+        "freq": 1
+    },
+    "5": {
+        "question": "How would you rate your overall physical health today?",
+        "freq": 1
+    },
+    "6": {
+        "question": "Are you drinking enough water today?",
+        "freq": 1
+    },
+    "7": {
+        "question": "On a scale of 1-10, how would you rate your mood today?",
+        "freq": 1
+    },
+    "8": {
+        "question": "Do you feel irritable or frustrated more than usual?",
+        "freq": 7
+    },
+    "9": {
+        "question": "Have you felt sad, down, or depressed in the past week?",
+        "freq": 7
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "medication_intake": {
+        "points": 10,
+        "when_should_be_reasked": 1,
+        "description": "Daily medication intake"
+    },
+    "complete_30_mins_exercise": {
+        "points": 20,
+        "when_should_be_reasked": 1,
+        "description": "Complete 30 minutes of exercise"
+    },
+    "drink_water": {
+        "points": 5,
+        "when_should_be_reasked": 0.5,
+        "description": "Drink recommended amount of water"
+    },
+    "health_survey": {
+        "points": 50,
+        "when_should_be_reasked": 30,
+        "description": "Monthly health survey"
+    },
+    "medical_check_up": {
+        "points": 100,
+        "when_should_be_reasked": 90,
+        "description": "Attend quarterly medical check-up"
+    }
+}

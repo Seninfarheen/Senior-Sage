@@ -1,0 +1,118 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    # nginx.ingress.kubernetes.io/use-regex: "true"
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+    # nginx.ingress.kubernetes.io/websocket-services: 'my-websocket-service'
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/server-snippets: |
+      location /llm {
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_http_version 1.1;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header Host $host;
+        proxy_set_header Connection "upgrade";
+        proxy_cache_bypass $http_upgrade;
+      }
+  name: {{ .Values.authz.name }}-ingress
+  namespace: {{ .Values.namespace }}
+spec:
+  ingressClassName: nginx
+  rules:
+  # - host: {{ .Values.host}}
+  - http:
+      paths:
+      - path: /auth
+        pathType: Prefix
+        backend:
+          service:
+            # name: {{ .Values.authz.nodePortServiceName }}
+            name: {{ .Values.authz.serviceName }}
+            port: 
+              number: {{ .Values.authz.servicePort }}
+      - path: /llm
+        pathType: Prefix
+        backend:
+          service:
+            # name: {{ .Values.languageProcessor.nodePortServiceName }}
+            name: {{ .Values.languageProcessor.serviceName }}
+            port: 
+              number: {{ .Values.languageProcessor.servicePort }}
+      - path: /socket.io
+        pathType: Prefix
+        backend:
+          service:
+            # name: {{ .Values.languageProcessor.nodePortServiceName }}
+            name: {{ .Values.languageProcessor.serviceName }}
+            port: 
+              number: {{ .Values.languageProcessor.servicePort }}
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            # name: {{ .Values.serverService.nodePortServiceName }}
+            name: {{ .Values.serverService.serviceName }}
+            port: 
+              number: {{ .Values.serverService.servicePort }}
+      
+---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx-service
+# spec:
+#   selector:
+#     app: nginx  # Replace 'nginx' with the label of your Nginx deployment
+#   ports:
+#     - protocol: TCP
+#       port: 80
+#       targetPort: 80
+#   type: LoadBalancer
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   annotations:
+#     nginx.ingress.kubernetes.io/use-regex: "true"
+#     nginx.ingress.kubernetes.io/rewrite-target: /
+#   name: {{ .Values.serverService.name }}-ingress
+#   namespace: {{ .Values.namespace }}
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#   # - host: {{ .Values.host}}
+#   - http:
+#       paths:
+#       - path: /
+#         pathType: ImplementationSpecific
+#         backend:
+#           service:
+#             name: {{ .Values.serverService.serviceName }}
+#             port: 
+#               number: {{ .Values.serverService.servicePort }}
+# ---
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   annotations:
+#     nginx.ingress.kubernetes.io/use-regex: "true"
+#     nginx.ingress.kubernetes.io/websocket-services: 'my-websocket-service'
+#     # nginx.ingress.kubernetes.io/rewrite-target: /
+#   name: {{ .Values.languageProcessor.name }}-ingress
+#   namespace: {{ .Values.namespace }}
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#   # - host: {{ .Values.host}}
+#   - http:
+#       paths:
+#       - path: /llm
+#         pathType: ImplementationSpecific
+#         backend:
+#           service:
+#             name: {{ .Values.languageProcessor.serviceName }}
+#             port: 
+#               number: {{ .Values.languageProcessor.servicePort }}

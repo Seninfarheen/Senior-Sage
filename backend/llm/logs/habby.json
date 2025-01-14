@@ -1,0 +1,27 @@
+[
+    {
+        "timestamp": "2024-10-16T10:58:16.186555",
+        "messages": [
+            {
+                "timestamp": "2024-10-16T10:58:24.406019",
+                "user_message": "Hello",
+                "bot_response": "Hello! How are you today?"
+            },
+            {
+                "timestamp": "2024-10-16T10:58:37.998422",
+                "user_message": "I'm good, how are you?",
+                "bot_response": "I'm glad to hear that! I'm doing well, thank you. What have you been up to today?"
+            },
+            {
+                "timestamp": "2024-10-16T10:58:47.068968",
+                "user_message": "Nothing, just had my breakfast.",
+                "bot_response": "That sounds nice! What did you have for breakfast?"
+            },
+            {
+                "timestamp": "2024-10-16T10:58:57.871504",
+                "user_message": "I had oat.",
+                "bot_response": "Oats are a healthy choice! Did you add anything to them, like fruit or honey?"
+            }
+        ]
+    }
+]

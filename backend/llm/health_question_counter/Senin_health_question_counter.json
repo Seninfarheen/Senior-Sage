@@ -1,0 +1,72 @@
+{
+    "0": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671417",
+        "diff": 0
+    },
+    "1": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671429",
+        "diff": 0
+    },
+    "2": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671433",
+        "diff": 0
+    },
+    "3": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671435",
+        "diff": 0
+    },
+    "4": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671437",
+        "diff": 0
+    },
+    "5": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671439",
+        "diff": 0
+    },
+    "6": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671441",
+        "diff": 0
+    },
+    "7": {
+        "counter": false,
+        "freq": 1,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671443",
+        "diff": 0
+    },
+    "8": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671445",
+        "diff": 0
+    },
+    "9": {
+        "counter": false,
+        "freq": 7,
+        "asked_date": null,
+        "curr_date": "2025-01-04T14:28:46.671447",
+        "diff": 0
+    }
+}

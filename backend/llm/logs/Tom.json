@@ -1,0 +1,47 @@
+[
+    {
+        "timestamp": "2024-11-11T20:10:04.139549",
+        "messages": [
+            {
+                "timestamp": "2024-11-11T20:10:12.453611",
+                "user_message": "hi",
+                "bot_response": "Hello! How's your day going?"
+            },
+            {
+                "timestamp": "2024-11-11T20:11:40.514339",
+                "user_message": "it is going good, went to eat pizza in my favourite pizza place, Napolis",
+                "bot_response": "Pizza at Napolis sounds delicious! Do you have a favorite topping there? Also, while enjoying your meal, did you happen to spend time with any family or friends?"
+            },
+            {
+                "timestamp": "2024-11-11T20:12:33.862329",
+                "user_message": "umm yes I did, but my kids ordered pineapple pizza, so I was not too sure about that",
+                "bot_response": "Pineapple pizza can be a bit of a surprise! Did you give it a try, or did you stick with your usual favorite? It sounds like a nice family outing. Have you spent time with them earlier in the day?"
+            },
+            {
+                "timestamp": "2024-11-11T20:13:26.008754",
+                "user_message": "yes, i went to drop my kids to school today",
+                "bot_response": "That sounds like a good start to the day! Dropping your kids off at school must give you a little routine and structure. Do you find yourself having a bit more free time after that, or does your day tend to get busier?"
+            },
+            {
+                "timestamp": "2024-11-11T20:14:06.116651",
+                "user_message": "no it gets better from there, i spend some quality time with my wife and we relax for a bit",
+                "bot_response": "That sounds lovely! Spending quality time with your wife is so important. Did you do anything special together during your relaxation time?"
+            },
+            {
+                "timestamp": "2024-11-11T20:14:34.555309",
+                "user_message": "we just got lunch and drank some wien",
+                "bot_response": "That sounds like a pleasant lunch! Hope you enjoyed it. Was the wine a special choice for the occasion?"
+            },
+            {
+                "timestamp": "2024-11-11T20:15:10.120300",
+                "user_message": "no nothing special, we were just happy to relax todat",
+                "bot_response": "It's great to hear that you had a relaxing day with your wife! Sometimes, a peaceful day with no special plans can be very refreshing. Did you find that you were able to fully unwind, or did anything else come to mind while you were relaxing?"
+            },
+            {
+                "timestamp": "2024-11-11T20:15:29.797652",
+                "user_message": "no nothing in general. I gotta go my kids are calling me",
+                "bot_response": "Alright then, have a great day ahead!"
+            }
+        ]
+    }
+]

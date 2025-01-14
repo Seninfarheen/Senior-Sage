@@ -1,0 +1,24 @@
+{
+  "user": "Henry",
+  "last_updated": "2024-12-06T21:09:20.951437",
+  "preferences": [
+    {
+      "type": "food",
+      "detail": "loves pizza",
+      "sentiment": "like",
+      "timestamp": "2024-12-06T20:56:26.154584"
+    },
+    {
+      "type": "hobby",
+      "detail": "Henry loves baking and has baked lasagna, brownies, and other cakes. He also enjoyed reading the book Rich Dad, Poor Dad.",
+      "sentiment": "like",
+      "timestamp": "2024-12-06T21:05:29.051305"
+    },
+    {
+      "type": "hobby",
+      "detail": "enjoys baking lasagnas, brownies, other cakes, and reading books, especially 'Rich Dad Poor Dad'",
+      "sentiment": "like",
+      "timestamp": "2024-12-06T21:09:20.951420"
+    }
+  ]
+}

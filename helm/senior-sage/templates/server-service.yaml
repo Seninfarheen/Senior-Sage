@@ -1,0 +1,83 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.serverService.name }}-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.serverService.name }}
+spec:
+  replicas: {{ .Values.serverService.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.serverService.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.serverService.name }}
+    spec:
+      containers:
+      - name: {{ .Values.serverService.name }}
+        image: {{ .Values.dockerUsername }}/{{ .Values.serverService.image }}
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /ping
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/config/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ .Values.serverService.configMapName }}
+          items:
+          - key: conf.yaml
+            path: conf.yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.serverService.configMapName }}
+  namespace: {{ .Values.namespace }}
+data:
+  conf.yaml: |-
+    authzConfig:
+      host: {{ .Values.authz.serviceName }}.{{ .Values.namespace }}
+      port: {{ .Values.authz.servicePort }}
+    storageConfig:
+      host: {{ .Values.storageService.serviceName }}.{{ .Values.namespace }}
+      port: {{ .Values.storageService.servicePort }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.serverService.serviceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.serverService.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.serverService.servicePort }}
+      targetPort: {{ .Values.serverService.targetPort }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.serverService.nodePortServiceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  type: NodePort
+  selector:
+    app: {{ .Values.serverService.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.serverService.servicePort }}
+      # port: 80
+      targetPort: {{ .Values.serverService.targetPort }}
+      nodePort: {{ .Values.serverService.nodePort }}

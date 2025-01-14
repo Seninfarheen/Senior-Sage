@@ -1,0 +1,17 @@
+{
+    "total_points": 80,
+    "task_history": {
+        "complete_30_mins_exercise": {
+            "last_rewarded": "2024-12-04T18:54:09.441912",
+            "total_times_rewarded": 1
+        },
+        "drink_water": {
+            "last_rewarded": "2024-12-05T19:42:29.142833",
+            "total_times_rewarded": 2
+        },
+        "health_survey": {
+            "last_rewarded": "2024-12-05T19:47:12.049001",
+            "total_times_rewarded": 1
+        }
+    }
+}

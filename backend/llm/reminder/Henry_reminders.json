@@ -1,0 +1,30 @@
+[
+    {
+        "reminder for golf sessions": {
+            "time": "3:00 PM",
+            "days": [
+                "Monday",
+                "Thursday"
+            ],
+            "frequency": "weekly"
+        }
+    },
+    {
+        "reminder_for": "meeting with friend",
+        "details": {
+            "time": "6:00 PM",
+            "frequency": "one-time",
+            "start_date": "2024-12-06",
+            "cron_job": "0 18 6 12 *"
+        }
+    },
+    {
+        "reminder_for": "morning walks",
+        "details": {
+            "time": "6:00 AM",
+            "frequency": "daily",
+            "start_date": "2024-12-07",
+            "cron_job": "0 6 * * 1-5"
+        }
+    }
+]

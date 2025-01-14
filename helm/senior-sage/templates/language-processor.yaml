@@ -1,0 +1,87 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.languageProcessor.name }}-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.languageProcessor.name }}
+spec:
+  replicas: {{ .Values.languageProcessor.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.languageProcessor.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.languageProcessor.name }}
+    spec:
+      containers:
+      - name: {{ .Values.languageProcessor.name }}
+        image: {{ .Values.dockerUsername }}/{{ .Values.languageProcessor.image }}
+        ports:
+        - containerPort: 5000
+        livenessProbe:
+          httpGet:
+            path: /ping
+            port: 5000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        volumeMounts:
+        - name: config-volume
+          mountPath: /app/config/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ .Values.languageProcessor.configMapName }}
+          items:
+          - key: conf.yaml
+            path: conf.yaml
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.languageProcessor.configMapName }}
+  namespace: {{ .Values.namespace }}
+data:
+  conf.yaml: |-
+    llmUsername: {{ .Values.llmUsername }}
+    llmPassword: {{ .Values.llmPassword }}
+    openaiApiKey: {{ .Values.languageProcessor.openaiApiKey }}
+    storageService:
+      host: {{ .Values.storageService.serviceName }}.{{ .Values.namespace }}
+      port: {{ .Values.storageService.servicePort }}
+    authzService:
+      host: {{ .Values.authz.serviceName }}.{{ .Values.namespace }}
+      port: {{ .Values.authz.servicePort }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.languageProcessor.serviceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.languageProcessor.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.languageProcessor.servicePort }}
+      targetPort: {{ .Values.languageProcessor.targetPort }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.languageProcessor.nodePortServiceName }}
+  namespace: {{ .Values.namespace }}
+spec:
+  type: NodePort
+  selector:
+    app: {{ .Values.languageProcessor.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.languageProcessor.servicePort }}
+      targetPort: {{ .Values.languageProcessor.targetPort }}
+      nodePort: {{ .Values.languageProcessor.nodePort }}
+
